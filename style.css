@@ -1,77 +1,78 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
 }
 
 .login-container {
-    background: #ffffff;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
+    text-align: center;
 }
 
-.login-container h1 {
-    text-align: center;
+h1, h2 {
     margin-bottom: 20px;
-    font-size: 24px;
     color: #333;
 }
 
-.login-container label {
+label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
     color: #555;
 }
 
-.login-container input {
+input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
+    box-sizing: border-box;
 }
 
-.login-container input:focus {
-    outline: none;
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.login-container button {
+button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #007bff;
     border: none;
-    color: #ffffff;
-    font-size: 16px;
     border-radius: 5px;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.login-container button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-.login-container .forgot-password {
+a.forgot-password {
     display: block;
-    text-align: center;
     margin-top: 10px;
-    color: #007BFF;
+    color: #007bff;
     text-decoration: none;
-    font-size: 14px;
 }
 
-.login-container .forgot-password:hover {
+a.forgot-password:hover {
     text-decoration: underline;
+}
+
+.signup-container {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.signup-container p {
+    margin-bottom: 20px;
+    color: #555;
 }
